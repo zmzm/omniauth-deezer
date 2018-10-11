@@ -27,6 +27,9 @@ module OmniAuth
 
       def request_phase
         options.perms ||= DEFAULT_PERMS
+        
+        puts 'CALLBACK'
+        puts callback_url
 
         new_url_to_go = callback_url.split('?')[0]
                 
